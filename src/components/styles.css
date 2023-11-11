@@ -43,3 +43,55 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px black;
 }
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todos_single {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    /* background-color: yellow; */
+    background-image: url("https://img.freepik.com/free-vector/abstract-yellow-comic-zoom_1409-923.jpg?w=1060&t=st=1699647495~exp=1699648095~hmac=155728f6947d9d133d4b71690e1506ad2b1abdd5ef6d7dc962885905095328fb");
+}
+
+.todos_single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.todos_single--text:focus {
+    outline: none;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .todos_single {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }   
+    .todos {
+        width: 95%;
+    }
+    .todos_single {
+        width: 100%;
+    }
+}
